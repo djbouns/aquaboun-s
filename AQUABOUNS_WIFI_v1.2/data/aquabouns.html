@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AQUABOUNS</title>
+    <script>
+   function obtenirVariables()
+   {
+var uniqueURL = "reqEtatVariables";
+      var request = new XMLHttpRequest(); // http://www.toutjavascript.com/reference/ref-xmlhttprequest.php
+
+      // la fonction à appeler lors d'un changement d'avancement de la requête AJAX
+      request.onreadystatechange = function()
+      {
+         if (this.readyState == 4) {
+            // Indicateur de l'avancement de l'appel AJAX == 4 => Données complètement accessibles 
+            if (this.status == 200) {
+               // Code retour du serveur après l'appel AJAX == 200 => OK, tout s'est bien passé
+               if (this.responseXML != null) {
+document.getElementById("TimeHID").innerHTML =
+                  this.responseXML.getElementsByTagName('TimeH')[0].childNodes[0].nodeValue;
+document.getElementById("TimeMID").innerHTML =
+                  this.responseXML.getElementsByTagName('TimeM')[0].childNodes[0].nodeValue;
+document.getElementById("TimeSID").innerHTML =
+                  this.responseXML.getElementsByTagName('TimeS')[0].childNodes[0].nodeValue;
+document.getElementById("TbacID").innerHTML =
+                  this.responseXML.getElementsByTagName('Tbac')[0].childNodes[0].nodeValue;
+document.getElementById("TrampeID").innerHTML =
+                  this.responseXML.getElementsByTagName('Trampe')[0].childNodes[0].nodeValue;
+document.getElementById("PblancID").innerHTML =
+                  this.responseXML.getElementsByTagName('Pblanc')[0].childNodes[0].nodeValue;
+document.getElementById("PbleuID").innerHTML =
+                  this.responseXML.getElementsByTagName('Pbleu')[0].childNodes[0].nodeValue;
+document.getElementById("PbrassID").innerHTML =
+                  this.responseXML.getElementsByTagName('Pbrass')[0].childNodes[0].nodeValue;
+document.getElementById("PhbacID").innerHTML =
+                  this.responseXML.getElementsByTagName('Phbac')[0].childNodes[0].nodeValue;
+document.getElementById("PhracID").innerHTML =
+                  this.responseXML.getElementsByTagName('Phrac')[0].childNodes[0].nodeValue;
+               }
+            }
+         }
+      }
+      request.open("GET", uniqueURL , true); // ici on envoie la requête GET sur l'URL /reqEtatVariables
+      request.send(null);
+      setTimeout("obtenirVariables()", 10000); // on rappelle obtenirVariables() dans 5s
+   }
+   </script>
+    <style>
+      input[type=button]{ 
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  color: MediumBlue;
+  background-color: #3ffd00;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 5px #999;
+}
+ input[type=button]:hover {
+  background-color:#33cc00}   
+      <table, TD, TH {border: 4px solid>}
+      body{background-color: LightBlue ;color: MediumBlue ;font-family: Comic Sans MS;font-size: 35px; white-space: nowrap}
+</style> </head>
+  <body onload="obtenirVariables()">
+    <h1 style="text-align: center;font-family: Comic Sans MS;font-size: 80px; text-shadow: 5px 4px DodgerBlue ;border: 2px solid red; color: MediumBlue;">AQUABOUN'S
+      <font size="6px">v1.2</font></h1>
+    <div style="text-align: center;"><span id="TimeHID">...</span>H<span id="TimeMID">...</span>&nbsp;<font
+
+        size="6px"><span id="TimeSID">...</span>s </font></div>
+    <br>
+    <center style="background-color: LightBlue;">
+      <table style="text-align: center;background-color: LightBlue;" border="3">
+        <tbody>
+          <tr>
+            <td text-align:="" center="" style="height: 22px;"> <span style="color: MediumBlue;">Température
+                aquarium :</span> <font color="red"><span id="TbacID">...</span>
+                °</font></td>
+          </tr>
+          <tr>
+            <td style="height: 20px;"><span style="color: MediumBlue;">Température
+                rampe :</span> <font color="red"><span id="TrampeID">...</span>
+                °</font></td>
+          </tr>
+          <tr>
+            <td><span style="color: MediumBlue;">Puissance blanc :</span> <font
+
+                color="red"><span id="PblancID">...</span> %</font></td>
+          </tr>
+          <tr>
+            <td><span style="color: MediumBlue;">Puissance bleu :</span> <font
+
+                color="red"><span id="PbleuID">...</span> %</font></td>
+          </tr>
+          <tr>
+            <td><span style="color: MediumBlue;">Puissance brassage :</span> <font
+
+                color="red"><span id="PbrassID">...</span> %</font></td>
+          </tr>
+          <tr>
+            <td><span style="color: MediumBlue;">PH bac :</span> <font color="red"><span
+
+                  id="PhbacID">...</span></font></td>
+          </tr>
+          <tr>
+            <td><span style="color: MediumBlue;">PH Rac :</span> <font color="red"><span
+
+                  id="PhracID">...</span></font></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+  </body>
+</html>
