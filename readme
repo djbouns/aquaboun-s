@@ -1,26 +1,118 @@
-AQUABOUNS, l'automate de gestion d'aquarium recifal
+Le projet AQUABOUNS en quelques mots
 
-Bonjour,
-
-Ce projet a débuté en Mai 2017 dans l'intention de réaliser un automate pour aquarium récifal complet, fiable et à faible coût pour qu'un maximum de récifalistes puissent l'utiliser.
-
-Il verra le jour grâce à quelques rares personnes qui m'ont guidé quand j'en avais besoin:
-
+Le début ...
+Je suis aquariophile depuis mon enfance et recifaliste depuis 6 ans.
+L'aquariophilie marine étant onéreuse, j'ai petit a petit commencer a bricoler pour mon bac, un nano 60L, d'abord une rampe LED en on/off, puis j'ai découvert l'arduino ... Même si je n'ai aucune formation en informatique, codage et électronique, j'ai chercher a comprendre et apprendre au fur et a mesure ...  tout d'abord avec des choses simple, lever/coucher soleil, prise de température, ventilation ... Mais quand je suis passer a 500L, je voulait tout automatiser. Vu les prix pratiquer dans le commerce pour un automate complet, je me suis tourner vers l'ackduino et je me suis vite aperçu que cela ne me convenait pas et il était difficile de modifier un si gros code, donc ...
+Ce projet a débuté en Mai 2017 dans l'intention de réalisé un automate pour aquarium récifal complet, fiable et à faible coût pour qu'un maximum de récifalistes puissent l'utiliser.Il verra le jour grâce à quelques rares personnes qui m'ont guidé quand j'en avais besoin:
+Cela représente des milliers d'heures de travail pour ~5000 lignes de code.
+Des dépenses importantes pour tester et trouver le matériel le plus adapté.
+Il est mis à disposition entièrement gratuitement afin que tout le monde puisse profiter d'un automate à faible coût.
+Cela a été possible grâce à quelques rares personnes qui m'ont guidé quand j'en avais besoin.
 Un GRAND merci à jean-Marc (aka J-M-L) du forum Arduino pour son aide et tous ses conseils qui ont permis à ce projet d'être aussi abouti.
-
 Merci à tout le forum Arduino pour son aide.
 
-Merci à ARMP qui a fait confiance à ce projet et a permis à une large diffusion.
+​l'AQUABOUNS c'est quoi ?​	
+l'AQUABOUNS est un automate de gestion pour aquarium récifal.​​
 
-AQUABOUN'S représente des milliers d'heures de travail pour ~5000 lignes de code, des dépenses importantes pour tester et trouver le matériel le plus adapté.
+Comment ça fonctionne ?​​	
+l'AQUABOUNS est basé sur une carte arduino Mega, il est complètement autonome. l'arduino communique avec différents périphériques (ecran, module wifi et module GSM) et interprète l'état de différents composants (flotteur,sonde température, horloge) et, en fonction du paramétrage, intervient sur le materiel du bac ( pompe remonté, brassage, ventilation, écumeur ...)​​
 
-Il est mis à disposition entièrement gratuitement afin que tout le monde puisse profiter d'un automate à faible coût.
+Comment obtenir le programme ? a quelle prix ? ​​	
+​l'AQUABOUNS est mis a disposition GRATUITEMENT, il a été déposé sous License libre (GPL 3.0) afin que tout le monde puissent en profiter.​​
+
+​Comment faire le montage ?	
+​Une partie des explications se trouve dans la notice que vous pouvez télécharger. 
+Malheureusement, vous n'y trouverez pas un montage détailler car un partie du materiel récifal peut fonctionne avec des courants forts nécessitant des connaissances et compétence particulière pour réaliser des modifications.
+
+
+
+Les fonctions de l’AQUABOUNS 
+
+!!! ATTENTION !!!
+Je ne suis pas informaticien ni programmateur.
+Ce programme a été réalisé avec le plus de soins possibles, cependant, il n'est pas exclu que des bugs subsiste.
+Ne pas laisser sans surveillance.
+Djbouns décline toute responsabilité quant aux dommages directs ou indirects qui pourraient être causés.
+
+
+
+Gestion éclairage, 4 canaux, 2 blancs et 2 bleus, puissance programmable, ON / OFF / PWM (heure de lever et coucher paramétrable)
+
+Gestion Brassage, 3 pompes, puissance programmable, ON / OFF / PWM (atténuation nocturne), un mode tempête manuel / aléatoire, atténuation nourrissage
+
+Gestion oscillateur, 3 oscillateurs, réglages des 2 angles et vitesse de déplacement
+
+Sécurité température bac, déclenchement ventilation et coupure du chauffage programmable, alerte SMS si hors limite, (la température doit être gérer par un module externe, thermoplongeur réguler ou thermostat externe)
+
+Gestion température rampe, déclenchement ventilation
+
+Mesure PH bac, limite basse et haute programmable / alerte SMS si hors limite
+
+Gestion PH RAC, 1 sortie électrovanne, coupure CO2 si PH du bac trop bas
+
+Gestion pompe de remonter, ON / OFF / DELAY (coupure pendant le nourrissage)
+
+Gestion nourrissage, déclenchement manuel (baisse du brassage) ou 2 distribution automatique (déclenche le distributeur + baisse du brassage), durée du nourrissage programmable
+
+Gestion de l’osmolation, alerte SMS si trop de déclenchement
+
+Gestion écumeur, OFF si niveau d’eau trop haut, OFF si godet plein + alerte SMS
+
+Flotteur de sécurité dans la décante, (coupure écumeur et osmolateur), alerte SMS
+
+Flotteur niveau eau osmosé, coupure de la pompe d’osmolation + alerte SMS
+
+Coupure EDF, alerte par SMS si coupure de courant et gestion de la batterie de secours
+
+Sauvegarde de toute anomalie sur carte SD
+
+Alerte SMS programmable, si anomalie envoie d’un SMS + relance SMS tout les heures (créneaux horaire programmable)
+
+Mise en veille de l’écran après 1 minute
+
+Visualisation des paramètres du bac sur page WEB
+
+
+
+Matériel nécessaire
+ 
+!!! ATTENTION !!!
+Je ne suis pas électricien ni électronicien. Ce qui suit n'est qu'un simple partage d'expérience.
+Toute connexion/interface avec des tensions dangereuses ne doit se faire que par du personnel qualifié et selon les normes en vigueur afin d'éviter tout risque d'accident ou d'incendie. Ne pas laisser sans surveillance.
+Djbouns décline toute responsabilité quant aux dommages directs ou indirects qui pourraient être causés.
+ 
+
+(à titre indicatif, tarif constaté des composants chez les vendeurs en France sans FDP, www.amazon.fr, www.ebay.fr,https://store.arduino.cc, https://www.itead.cc/display/nextion.html, avant de faire vos achats vérifier bien la compatibilité des composants, les frais de port, le délais de livraison et les frais de douane éventuel afin d'éviter toutes mauvaise surprise)
+1 Arduino Méga (officiel 35€, copie 15€)
+1 alimentation 5V mini 3A (15€)
+2 cartes PH 4502c (pour PH bac et PH rac, toute deux facultative) (20€/pcs)
+1 module GSM compatible commande AT (type sim800l) (15€)
+1 module WIFI ESP 8266 (type Wemos d1 mini) (10€)
+1 lecteur SD (5€)
+1 horloge ds3231 (plus précise que le ds1307) (6€)
+2 sondes de température ds18b20 (pour le Bac et pour la rampe) (6€/pcs)
+5 flotteurs (niv constant, niv réserve, niv écumeur, godet écumeur, niv sécurité) (3€/pcs)
+4 relais (carte « arduino » 8€, relais DIN pour tableau 45€)
+Tension de référence 4.096V (type MPC1541 pour mesure ph stable) (1.5€)
+1 écran NEXTION, Vous avez la possibilité d'utiliser plusieurs model d'écran NEXTION du moment que la résolution est 800*480 (IMPORTANT, Il faut impérativement utiliser un écran NEXTION ORIGINAL, https://nextion.itead.cc/nextion-shop/ les copies ne reconnaissent pas les fichiers ) (56€ - 93€)
+ 
+Total config MINI = ~179€ // Total config MAX = ~293€
+
+ !!! IMPORTANT !!!
+N'oubliez pas qu'il faut ajouter à cela les frais de port, boitier, câblage, toutes les connections et périphériques éventuels (oscillateur, pompe osmolation, ventilateurs, etc…), une batterie de secours (facultatif mais nécessaire pour être alerté en cas de coupure de courant) et divers composants électroniques pour réaliser le montage. Tenez compte du coût de tout ce matériel nécessaire pour réaliser un montage fiable et de qualité. Garder en tête que l'automate gère votre aquarium récifal qui est coûteux.
+Evaluer bien vos finances et vos connaissances avant de vous lancer.
+
+---------------------------------------------------------------------------
+Si le projet vous a plus et que vous souhaitez qu'il perdure, évolue et continue à être mis à disposition gratuitement n'hésitez pas à faire un don, merci d'avance
+https://paypal.me/pools/c/88NxY14ZuS
+---------------------------------------------------------------------------
 
 N'hésitez pas à me faire part de toute amélioration ou évolution souhaitées :
-aquabouns@hotmail.com ou www.aquabouns.fr ou www.facebook.com/aquabouns
+aquabouns@hotmail.com 
+ou 
+www.aquabouns.fr 
+ou 
+www.facebook.com/aquabouns
 
-Si le projet vous a plus et que vous souhaitez qu'il perdure, évolue et continue à être mis à disposition gratuitement n'hésitez pas à faire un don, merci d'avance
-
-https://paypal.me/pools/c/88NxY14ZuS
 
 Merci et Bon montage à tous
