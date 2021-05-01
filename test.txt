@@ -1,0 +1,47 @@
+
+
+
+
+/*               AAA                 QQQQQQQQQ     UUUUUUUU     UUUUUUUU           AAA               BBBBBBBBBBBBBBBBB        OOOOOOOOO     UUUUUUUU     UUUUUUUUNNNNNNNN        NNNNNNNN   SSSSSSSSSSSSSSS
+                A:::A              QQ:::::::::QQ   U::::::U     U::::::U          A:::A              B::::::::::::::::B     OO:::::::::OO   U::::::U     U::::::UN:::::::N       N::::::N SS:::::::::::::::S
+               A:::::A           QQ:::::::::::::QQ U::::::U     U::::::U         A:::::A             B::::::BBBBBB:::::B  OO:::::::::::::OO U::::::U     U::::::UN::::::::N      N::::::NS:::::SSSSSS::::::S
+              A:::::::A         Q:::::::QQQ:::::::QUU:::::U     U:::::UU        A:::::::A            BB:::::B     B:::::BO:::::::OOO:::::::OUU:::::U     U:::::UUN:::::::::N     N::::::NS:::::S     SSSSSSS
+             A:::::::::A        Q::::::O   Q::::::Q U:::::U     U:::::U        A:::::::::A             B::::B     B:::::BO::::::O   O::::::O U:::::U     U:::::U N::::::::::N    N::::::NS:::::S
+            A:::::A:::::A       Q:::::O     Q:::::Q U:::::D     D:::::U       A:::::A:::::A            B::::B     B:::::BO:::::O     O:::::O U:::::D     D:::::U N:::::::::::N   N::::::NS:::::S
+           A:::::A A:::::A      Q:::::O     Q:::::Q U:::::D     D:::::U      A:::::A A:::::A           B::::BBBBBB:::::B O:::::O     O:::::O U:::::D     D:::::U N:::::::N::::N  N::::::N S::::SSSS
+          A:::::A   A:::::A     Q:::::O     Q:::::Q U:::::D     D:::::U     A:::::A   A:::::A          B:::::::::::::BB  O:::::O     O:::::O U:::::D     D:::::U N::::::N N::::N N::::::N  SS::::::SSSSS
+         A:::::A     A:::::A    Q:::::O     Q:::::Q U:::::D     D:::::U    A:::::A     A:::::A         B::::BBBBBB:::::B O:::::O     O:::::O U:::::D     D:::::U N::::::N  N::::N:::::::N    SSS::::::::SS
+        A:::::AAAAAAAAA:::::A   Q:::::O     Q:::::Q U:::::D     D:::::U   A:::::AAAAAAAAA:::::A        B::::B     B:::::BO:::::O     O:::::O U:::::D     D:::::U N::::::N   N:::::::::::N       SSSSSS::::S
+       A:::::::::::::::::::::A  Q:::::O  QQQQ:::::Q U:::::D     D:::::U  A:::::::::::::::::::::A       B::::B     B:::::BO:::::O     O:::::O U:::::D     D:::::U N::::::N    N::::::::::N            S:::::S
+      A:::::AAAAAAAAAAAAA:::::A Q::::::O Q::::::::Q U::::::U   U::::::U A:::::AAAAAAAAAAAAA:::::A      B::::B     B:::::BO::::::O   O::::::O U::::::U   U::::::U N::::::N     N:::::::::N            S:::::S
+     A:::::A             A:::::AQ:::::::QQ::::::::Q U:::::::UUU:::::::UA:::::A             A:::::A   BB:::::BBBBBB::::::BO:::::::OOO:::::::O U:::::::UUU:::::::U N::::::N      N::::::::NSSSSSSS     S:::::S
+    A:::::A               A:::::AQQ::::::::::::::Q   UU:::::::::::::UUA:::::A               A:::::A  B:::::::::::::::::B  OO:::::::::::::OO   UU:::::::::::::UU  N::::::N       N:::::::NS::::::SSSSSS:::::S
+    A:::::A                 A:::::A QQ:::::::::::Q      UU:::::::::UU A:::::A                A:::::A B::::::::::::::::B     OO:::::::::OO       UU:::::::::UU    N::::::N        N::::::NS:::::::::::::::SS
+    AAAAAAA                 AAAAAAA  QQQQQQQQ::::QQ       UUUUUUUUU   AAAAAAA                 AAAAAAABBBBBBBBBBBBBBBBB        OOOOOOOOO           UUUUUUUUU      NNNNNNNN         NNNNNNN SSSSSSSSSSSSSSS
+                                           Q:::::Q
+                                            QQQQQQ
+                                                                                              __      __  _____   _____
+                                                                                              \ \    / / /___  \ /  _  \
+                                                                                               \ \  / /   ___| | | | | |
+                                                                                                \ \/ /   /  ___/ | |/| |
+                                                                                                 \  /    | |___ _| |_| |
+                                                                                                  \/     |_____(_)_____/
+
+
+                                                                                                     du 01/05/2021
+
+                                                                                     Automate pour la gestion d'aquarium recifal
+                                                                                         Créé par Djbouns, Copyright (C) 2021
+
+                                                                            Avec l'aide du forum https://forum.arduino.cc pour le codage
+                                                                                      Un grand merci particulierement a J.M.L
+                                                                      Merci a Commodore pour tout les echanges qui ont fait grandire le projet
+
+
+  //                              !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                                           Tout est mis a votre disposition gratuitement et permet d'avoir un automate qui aurais coûter au minimum 1000€ dans le commerce.*/
+//                                                      !!!!! Alors Soutenez le projet pour qu'il continu d’évoluer et d’êtres mis a disposition gratuitement !!!!!
+//                                                                                    https://www.paypal.com/pools/c/88NxY14ZuS
+
+//                              !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
